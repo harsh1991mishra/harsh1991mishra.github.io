@@ -108,6 +108,23 @@
       color: var(--accent);
       text-decoration: none;
     }
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.8rem;
+    }
+    .link-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.7rem 0.9rem;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.02);
+      color: var(--text);
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+    .link-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
   </style>
 </head>
 
@@ -116,7 +133,7 @@
 
 <header>
   <div>
-    <img src="https://via.placeholder.com/140" alt="Harsh Mishra">
+    <img src="https://avatars.githubusercontent.com/u/93046472?s=400&u=c73c07e9d4c5a0737fd6a9e61edb8b1fc771f314&v=4" alt="Harsh Mishra">
     <h1>Harsh Mishra</h1>
     <h2>Data Analyst, AI Frontier 🚀 | Cyber Security Enthusiast</h2>
     <p class="tagline">Decoding data, securing digital dreams 💻🔒 | Sharing learnings, tips & tech tales 📚</p>
@@ -244,6 +261,82 @@
     <a href="#">Twitter/X</a> |
     <a href="mailto:harsh1991mishra@gmail.com">Email</a>
   </p>
+</section>
+
+<section id="links">
+  <h2>Links</h2>
+  <div class="card">
+    <div class="links-grid">
+      <a class="link-btn" href="https://github.com/harsh1991mishra" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>GitHub</span>
+      </a>
+      <a class="link-btn" href="https://www.linkedin.com/in/harsh1991mishra" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>LinkedIn</span>
+      </a>
+      <a class="link-btn" href="https://www.youtube.com/channel/UClGdvD1-3gcgHhO0IZrv1Lw" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>YouTube</span>
+      </a>
+      <a class="link-btn" href="https://www.instagram.com/jai_sri_mahakaal_1008/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Instagram</span>
+      </a>
+      <a class="link-btn" href="https://t.me/harsh1991mishra" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Telegram</span>
+      </a>
+      <a class="link-btn" href="https://harsh1991mishra.beehiiv.com/subscribe" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Newsletter</span>
+      </a>
+      <a class="link-btn" href="https://about.me/harsh1991mishra" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>About.me</span>
+      </a>
+      <a class="link-btn" href="https://www.coursera.org/learner/harsh1991mishra" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Coursera</span>
+      </a>
+      <a class="link-btn" href="https://g.dev/harsh1991mishra" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Google Dev</span>
+      </a>
+      <a class="link-btn" href="https://harsh1991mishra.flutin.com/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Flutin Live</span>
+      </a>
+      <a class="link-btn" href="https://www.patreon.com/harsh1991mishra" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Patreon</span>
+      </a>
+      <a class="link-btn" href="http://pph.me/harsh1991mishra" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>PeoplePerHour</span>
+      </a>
+      <a class="link-btn" href="https://rarible.com/harsh1991mishra" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Rarible</span>
+      </a>
+      <a class="link-btn" href="https://harsh1991mishra.wixsite.com/portfolio" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Wix Portfolio</span>
+      </a>
+      <a class="link-btn" href="https://www.behance.net/harsh1991mishra" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Behance</span>
+      </a>
+      <a class="link-btn" href="https://x.com/harsh1991mishra" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>X</span>
+      </a>
+      <a class="link-btn" href="mailto:harsh1991mishra@gmail.com" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 14L21 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 21H3V3h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Email</span>
+      </a>
+    </div>
+  </div>
 </section>
 
 <footer>
