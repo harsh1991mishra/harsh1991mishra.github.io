@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#00d98a"/>
+      <stop offset="1" stop-color="#7bd389"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="20" fill="#081510" />
+  <g transform="translate(12,12)">
+    <circle cx="48" cy="48" r="40" fill="url(#g)">
+      <animate attributeName="r" values="38;42;38" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <text x="48" y="56" font-family="Inter, Roboto, sans-serif" font-weight="700" font-size="40" text-anchor="middle" fill="#062312">HM</text>
+  </g>
+</svg>

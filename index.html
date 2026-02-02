@@ -6,13 +6,31 @@
   <meta name="description" content="Harsh Mishra - Technical Consultant, System Administrator, Developer. Privacy compliance, automation, IoT, and AI/ML specialist.">
   <meta name="keywords" content="Technical Consultant, System Administrator, Developer, Privacy, Automation, IoT, AI/ML, Windows, Linux, Docker">
   <meta name="author" content="Harsh Mishra">
-  <meta name="theme-color" content="#0f3460">
+  <meta name="theme-color" content="#0b6b3a">
   <meta property="og:title" content="Harsh Mishra - Technical Consultant & Developer">
   <meta property="og:description" content="Specialized in privacy compliance, system automation, IoT, and AI/ML solutions.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://harsh1991mishra.github.io/">
   <title>Harsh Mishra | Technical Consultant & Developer</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="canonical" href="https://harsh1991mishra.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@harsh1991mishra" />
+  <meta name="twitter:title" content="Harsh Mishra - Technical Consultant & Developer" />
+  <meta name="twitter:description" content="Privacy-first automation, IoT experimentation and AI/ML integrations." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/harsh1991mishra/harsh1991mishra.github.io/main/favicon.svg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Harsh Mishra",
+    "url": "https://harsh1991mishra.github.io/",
+    "sameAs": ["https://github.com/harsh1991mishra","https://www.linkedin.com/in/harsh1991mishra"],
+    "jobTitle": "Technical Consultant, System Administrator, Developer",
+    "description": "Technical professional focused on privacy compliance, automation, IoT, and AI/ML.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Noida", "addressRegion": "Uttar Pradesh", "addressCountry": "IN" }
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -121,6 +139,9 @@
       color: var(--primary);
       transition: var(--transition);
     }
+
+    .site-logo{width:40px;height:40px;margin-right:8px;vertical-align:middle}
+    .logo-text{margin-left:6px;font-weight:700}
 
     body.dark-mode .logo {
       color: var(--accent);
@@ -241,6 +262,8 @@
       max-width: 800px;
       animation: fadeInUp 1s ease-out;
     }
+
+    .profile-photo{width:120px;height:120px;border-radius:999px;border:4px solid rgba(255,255,255,0.12);object-fit:cover;margin:0 auto 1rem;display:block;box-shadow:0 10px 30px rgba(0,0,0,0.3)}
 
     @keyframes fadeInUp {
       from {
@@ -429,7 +452,9 @@
 
     /* Progress bar for skills */
     .progress { background: rgba(0,0,0,0.06); height:10px; border-radius:8px; overflow:hidden; margin-top:12px; }
-    .bar { height:100%; background:var(--accent); width:0%; transition:width 0.7s cubic-bezier(.2,.9,.2,1); }
+    .bar { height:100%; background:var(--accent); width:0%; transition:width 0.9s cubic-bezier(.2,.9,.2,1); }
+    .skill-percent { margin-top:8px; font-weight:700; font-size:0.9rem; color:var(--text-dark); }
+    body.dark-mode .skill-percent { color:var(--text-light); }
 
     .projects-grid {
       display: grid;
@@ -640,7 +665,10 @@
 <header>
   <div class="container">
     <nav>
-      <div class="logo">HM</div>
+      <div class="logo">
+        <img src="logo.svg" alt="Harsh Mishra logo" class="site-logo" />
+        <span class="logo-text">HM</span>
+      </div>
       <button class="menu-toggle" id="menuToggle">☰</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
@@ -657,6 +685,8 @@
 
 <section class="hero">
   <div class="hero-content">
+    <!-- Replace PROFILE_PIC_URL_HERE with your LinkedIn image URL or GitHub avatar -->
+    <img id="profilePhoto" class="profile-photo" src="https://avatars.githubusercontent.com/u/93046472?s=400&u=c73c07e9d4c5a0737fd6a9e61edb8b1fc771f314&v=4" alt="Harsh Mishra profile photo">
     <h1>Harsh Mishra</h1>
     <div class="hero-role">Technical Consultant | System Administrator | Developer</div>
     <p class="hero-tagline">Specialized in privacy compliance, system automation, IoT innovation, and AI/ML solutions. Transforming complex challenges into elegant, scalable systems.</p>
@@ -726,48 +756,56 @@
         <h3>Windows Administration</h3>
         <p>Active Directory, Group Policy, PowerShell scripting, system hardening</p>
         <div class="progress"><div class="bar" style="width:90%"></div></div>
+          <div class="skill-percent">90%</div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">🐧</div>
         <h3>Linux/Unix</h3>
         <p>CentOS, Ubuntu, Bash scripting, system optimization, security</p>
         <div class="progress"><div class="bar" style="width:85%"></div></div>
+          <div class="skill-percent">85%</div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">🐳</div>
         <h3>Docker & Containers</h3>
         <p>Container orchestration, microservices, deployment automation</p>
         <div class="progress"><div class="bar" style="width:80%"></div></div>
+          <div class="skill-percent">80%</div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">📚</div>
         <h3>Git & Version Control</h3>
         <p>Advanced Git workflows, CI/CD pipelines, repository management</p>
         <div class="progress"><div class="bar" style="width:90%"></div></div>
+          <div class="skill-percent">90%</div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">🔌</div>
         <h3>IoT & Microcontrollers</h3>
         <p>ESP32, Arduino, embedded systems, sensor integration, real-time protocols</p>
         <div class="progress"><div class="bar" style="width:75%"></div></div>
+          <div class="skill-percent">75%</div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">🤖</div>
         <h3>AI/ML</h3>
         <p>Machine learning models, data analysis, neural networks, automation frameworks</p>
         <div class="progress"><div class="bar" style="width:70%"></div></div>
+          <div class="skill-percent">70%</div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">💻</div>
         <h3>Full-Stack Development</h3>
         <p>Python, JavaScript, backend APIs, frontend design, full-stack solutions</p>
         <div class="progress"><div class="bar" style="width:78%"></div></div>
+          <div class="skill-percent">78%</div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">🔐</div>
         <h3>Security & Privacy</h3>
         <p>Encryption, GDPR compliance, penetration testing, secure coding practices</p>
         <div class="progress"><div class="bar" style="width:82%"></div></div>
+          <div class="skill-percent">82%</div>
       </div>
     </div>
   </div>
@@ -970,6 +1008,23 @@
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
     observer.observe(el);
+  });
+
+  // Animate skill bars when skill cards come into view
+  const barObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bars = entry.target.querySelectorAll('.bar');
+        bars.forEach(b => {
+          const w = b.getAttribute('data-width') || b.style.width.replace('%','') || '0';
+          b.style.width = w + '%';
+        });
+      }
+    });
+  }, {threshold: 0.2});
+
+  document.querySelectorAll('.skill-card').forEach(card => {
+    barObserver.observe(card);
   });
 
   const contactForm = document.getElementById('contactForm');
