@@ -19,10 +19,10 @@
   
   <style>
     :root {
-      --primary: #0f3460;
-      --secondary: #16213e;
-      --accent: #00d9ff;
-      --accent-alt: #ff6b6b;
+      --primary: #0b6b3a; /* green */
+      --secondary: #0f5130; /* darker green */
+      --accent: #00d98a; /* mint accent */
+      --accent-alt: #7bd389;
       --text-dark: #1a1a2e;
       --text-light: #e0e0e0;
       --bg-light: #ffffff;
@@ -209,7 +209,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
       color: white;
       text-align: center;
       padding: 4rem 2rem;
@@ -426,6 +426,10 @@
     .skill-card p {
       font-size: 0.9rem;
     }
+
+    /* Progress bar for skills */
+    .progress { background: rgba(0,0,0,0.06); height:10px; border-radius:8px; overflow:hidden; margin-top:12px; }
+    .bar { height:100%; background:var(--accent); width:0%; transition:width 0.7s cubic-bezier(.2,.9,.2,1); }
 
     .projects-grid {
       display: grid;
@@ -721,41 +725,49 @@
         <div class="skill-icon">🪟</div>
         <h3>Windows Administration</h3>
         <p>Active Directory, Group Policy, PowerShell scripting, system hardening</p>
+        <div class="progress"><div class="bar" style="width:90%"></div></div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">🐧</div>
         <h3>Linux/Unix</h3>
         <p>CentOS, Ubuntu, Bash scripting, system optimization, security</p>
+        <div class="progress"><div class="bar" style="width:85%"></div></div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">🐳</div>
         <h3>Docker & Containers</h3>
         <p>Container orchestration, microservices, deployment automation</p>
+        <div class="progress"><div class="bar" style="width:80%"></div></div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">📚</div>
         <h3>Git & Version Control</h3>
         <p>Advanced Git workflows, CI/CD pipelines, repository management</p>
+        <div class="progress"><div class="bar" style="width:90%"></div></div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">🔌</div>
         <h3>IoT & Microcontrollers</h3>
         <p>ESP32, Arduino, embedded systems, sensor integration, real-time protocols</p>
+        <div class="progress"><div class="bar" style="width:75%"></div></div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">🤖</div>
         <h3>AI/ML</h3>
         <p>Machine learning models, data analysis, neural networks, automation frameworks</p>
+        <div class="progress"><div class="bar" style="width:70%"></div></div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">💻</div>
         <h3>Full-Stack Development</h3>
         <p>Python, JavaScript, backend APIs, frontend design, full-stack solutions</p>
+        <div class="progress"><div class="bar" style="width:78%"></div></div>
       </div>
       <div class="skill-card">
         <div class="skill-icon">🔐</div>
         <h3>Security & Privacy</h3>
         <p>Encryption, GDPR compliance, penetration testing, secure coding practices</p>
+        <div class="progress"><div class="bar" style="width:82%"></div></div>
       </div>
     </div>
   </div>
