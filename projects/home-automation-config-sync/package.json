@@ -1,0 +1,10 @@
+
+{
+  "name": "home-automation-config-sync",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^19.0.0"
+  }
+}
