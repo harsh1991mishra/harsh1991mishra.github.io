@@ -444,17 +444,32 @@
 
     .skill-card h3 {
       margin-bottom: 0.5rem;
+      color: var(--primary);
+      font-size: 1.2rem;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    body.dark-mode .skill-card h3 {
+      color: var(--accent);
     }
 
     .skill-card p {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    body.dark-mode .skill-card p {
+      color: var(--text-light);
     }
 
     /* Progress bar for skills */
     .progress { background: rgba(0,0,0,0.06); height:10px; border-radius:8px; overflow:hidden; margin-top:12px; }
     .bar { height:100%; background:var(--accent); width:0%; transition:width 0.9s cubic-bezier(.2,.9,.2,1); }
-    .skill-percent { margin-top:8px; font-weight:700; font-size:0.9rem; color:var(--text-dark); }
-    body.dark-mode .skill-percent { color:var(--text-light); }
+    .skill-percent { margin-top:8px; font-weight:700; font-size:0.9rem; color:var(--primary); }
+    body.dark-mode .skill-percent { color:var(--accent); }
 
     .projects-grid {
       display: grid;
