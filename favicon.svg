@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background -->
+  <rect width="100" height="100" fill="#061021" rx="10"/>
+  
+  <!-- Swastika in saffron/gold -->
+  <g fill="#ff9800" stroke="none">
+    <!-- Vertical bar -->
+    <rect x="40" y="15" width="20" height="70" rx="4"/>
+    <!-- Horizontal bar -->
+    <rect x="15" y="40" width="70" height="20" rx="4"/>
+    <!-- Top-left hook -->
+    <rect x="15" y="15" width="25" height="20" rx="4"/>
+    <rect x="15" y="15" width="20" height="25" rx="4"/>
+    <!-- Top-right hook -->
+    <rect x="60" y="15" width="25" height="20" rx="4"/>
+    <rect x="80" y="15" width="20" height="25" rx="4"/>
+    <!-- Bottom-left hook -->
+    <rect x="15" y="65" width="25" height="20" rx="4"/>
+    <rect x="15" y="60" width="20" height="25" rx="4"/>
+    <!-- Bottom-right hook -->
+    <rect x="60" y="65" width="25" height="20" rx="4"/>
+    <rect x="80" y="60" width="20" height="25" rx="4"/>
+  </g>
+</svg>
