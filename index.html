@@ -673,6 +673,84 @@
     @keyframes fadeIn {
       to { opacity: 1; }
     }
+
+    /* Blog/Insights Section */
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .insight-card {
+      background: var(--bg-light);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+
+    body.dark-mode .insight-card {
+      background: var(--secondary);
+      box-shadow: var(--shadow-dark);
+    }
+
+    .insight-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 50px rgba(11, 107, 58, 0.15);
+    }
+
+    .insight-header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      padding: 2rem;
+      color: white;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .insight-tag {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      width: fit-content;
+    }
+
+    .insight-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: white;
+      margin: 0;
+    }
+
+    .insight-body {
+      padding: 2rem;
+    }
+
+    .insight-body p {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+    }
+
+    body.dark-mode .insight-body p {
+      color: var(--text-light);
+    }
+
+    .insight-date {
+      font-size: 0.85rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    body.dark-mode .insight-date {
+      color: var(--accent);
+    }
   </style>
 </head>
 <body>
@@ -689,6 +767,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#insights">Blog</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="header-actions">
@@ -704,7 +783,7 @@
     <img id="profilePhoto" class="profile-photo" src="https://avatars.githubusercontent.com/u/93046472?s=400&u=c73c07e9d4c5a0737fd6a9e61edb8b1fc771f314&v=4" alt="Harsh Mishra profile photo">
     <h1>Harsh Mishra</h1>
     <div class="hero-role">Technical Consultant | System Administrator | Developer</div>
-    <p class="hero-tagline">Specialized in privacy compliance, system automation, IoT innovation, and AI/ML solutions. Transforming complex challenges into elegant, scalable systems.</p>
+    <p class="hero-tagline">I am a Data Analyst, AI frontier 🚀 | Cyber Security enthusiast | Decoding data, securing digital dreams 💻🔒 Cyber Security trails 🕵️‍♂️ | Sharing learnings, tips & tech tales 📚 #DataAnalytics #ArtificialIntelligence #CyberSecurity #AI #CyberSecurity | Specialized in privacy compliance, system automation, IoT innovation, and AI/ML solutions. Transforming complex challenges into elegant, scalable systems.</p>
     <div class="cta-buttons">
       <a href="#projects" class="btn btn-primary">View My Work</a>
       <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -720,8 +799,9 @@
     </div>
     <div class="about-content">
       <div class="about-text">
-        <p>I'm a dedicated technical professional with deep expertise in system administration, privacy compliance, and innovative technology solutions. With hands-on experience spanning Windows & Linux environments, containerization, IoT development, and emerging AI/ML technologies.</p>
-        <p>My philosophy centers on building secure, efficient, and maintainable systems that respect user privacy while delivering exceptional performance. I'm passionate about automation, continuous improvement, and staying at the forefront of technological advancement.</p>
+        <p>I'm a versatile technical professional specialized in <strong>Data Analytics</strong>, <strong>Artificial Intelligence</strong>, and <strong>Cyber Security</strong>. With hands-on experience spanning Windows & Linux environments, containerization, IoT development, privacy compliance, and emerging AI/ML technologies, I bridge the gap between secure systems and intelligent automation.</p>
+        <p><strong>Data Analytics:</strong> Advanced Excel, Power BI, SQL, data visualization, and business intelligence for actionable insights. <strong>AI Frontier:</strong> Exploring machine learning models, neural networks, and AI integration for automation and prediction. <strong>Cyber Security:</strong> System hardening, encryption, GDPR compliance, threat detection, and secure coding practices.</p>
+        <p>My philosophy centers on building secure, efficient, and maintainable systems that respect user privacy while delivering exceptional performance. I'm passionate about automation, continuous improvement, decoding complex data patterns, and staying at the forefront of technological advancement.</p>
         <p><strong>Location:</strong> Noida, Uttar Pradesh, India<br>
         <strong>Contact:</strong> <a href="mailto:harsh1991mishra@gmail.com">harsh1991mishra@gmail.com</a> | +91 8445744581</p>
       </div>
@@ -892,6 +972,77 @@
           <div class="project-links">
             <a href="https://github.com/harsh1991mishra/oh-distro" target="_blank">GitHub</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="insights">
+  <div class="container">
+    <div class="section-title">
+      <h2>Blog & Insights</h2>
+      <p>Learnings, tips & tech tales on Data Analytics, AI, and Cyber Security</p>
+    </div>
+    <div class="insights-grid">
+      <div class="insight-card">
+        <div class="insight-header">
+          <span class="insight-tag">Data Analytics</span>
+          <h3 class="insight-title">Mastering Advanced Excel for Data Analysis</h3>
+        </div>
+        <div class="insight-body">
+          <p class="insight-date">Feb 2, 2026</p>
+          <p>Discover power query, pivot tables, and advanced formulas to transform raw data into actionable business intelligence. Learn how to automate reporting and unlock hidden patterns in your datasets.</p>
+        </div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-header">
+          <span class="insight-tag">AI & Machine Learning</span>
+          <h3 class="insight-title">AI Frontier: Building Your First ML Model</h3>
+        </div>
+        <div class="insight-body">
+          <p class="insight-date">Jan 28, 2026</p>
+          <p>A beginner-friendly guide to machine learning pipelines, model training, and deployment. Explore popular frameworks like Python scikit-learn and TensorFlow to solve real-world problems.</p>
+        </div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-header">
+          <span class="insight-tag">Cyber Security</span>
+          <h3 class="insight-title">Securing Your Systems: Best Practices & Tools</h3>
+        </div>
+        <div class="insight-body">
+          <p class="insight-date">Jan 15, 2026</p>
+          <p>Explore encryption standards, penetration testing techniques, and threat detection strategies. Learn how to harden your infrastructure and implement GDPR-compliant security measures.</p>
+        </div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-header">
+          <span class="insight-tag">Automation & DevOps</span>
+          <h3 class="insight-title">GitHub API Integration for Workflow Automation</h3>
+        </div>
+        <div class="insight-body">
+          <p class="insight-date">Jan 5, 2026</p>
+          <p>Automate CI/CD pipelines, manage repositories, and integrate GitHub workflows. Discover how API integrations can streamline your development process and enhance team productivity.</p>
+        </div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-header">
+          <span class="insight-tag">IoT & Embedded Systems</span>
+          <h3 class="insight-title">Building Smart IoT Solutions with ESP32</h3>
+        </div>
+        <div class="insight-body">
+          <p class="insight-date">Dec 28, 2025</p>
+          <p>From sensor integration to cloud connectivity. Learn how to build IoT applications using microcontrollers, MQTT protocols, and real-time data processing.</p>
+        </div>
+      </div>
+      <div class="insight-card">
+        <div class="insight-header">
+          <span class="insight-tag">Privacy & Compliance</span>
+          <h3 class="insight-title">Privacy-First Architecture: GDPR & Data Protection</h3>
+        </div>
+        <div class="insight-body">
+          <p class="insight-date">Dec 15, 2025</p>
+          <p>Design systems with privacy at the core. Understand GDPR requirements, data minimization principles, and best practices for building privacy-compliant applications.</p>
         </div>
       </div>
     </div>
