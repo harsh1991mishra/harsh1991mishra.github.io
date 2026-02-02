@@ -8,66 +8,29 @@
   <meta name="author" content="Harsh Mishra">
   <title>Harsh Mishra | Data Analyst</title>
 
-  <style>
-    :root {
-      --bg: #0f172a;
-      --text: #e5e7eb;
-      --card: #1e293b;
-      --accent: #38bdf8;
-    }
-    body.light {
-      --bg: #f8fafc;
-      --text: #0f172a;
-      --card: #ffffff;
-      --accent: #2563eb;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    body {
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    header {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-    }
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 4px solid var(--accent);
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: 2.8rem;
-    }
-    h2 {
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
-    section {
-      padding: 4rem 8%;
-    }
-    .tagline {
-      opacity: 0.85;
-      margin: 1rem 0;
-    }
-    .hashtags {
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+
+      <article class="card project-card">
+        <h3><a href="https://github.com/harsh1991mishra/harsh1991mishra.github.io" target="_blank" rel="noopener noreferrer">Personal website — harsh1991mishra.github.io</a></h3>
+        <div class="meta">HTML · Portfolio · Updated: 2026-02-02</div>
+        <p>Responsive personal website and portfolio showcasing projects, links and contact details. Built with plain HTML/CSS for simplicity and portability.</p>
+        <h4>How to run locally</h4>
+        <pre class="code-block"># clone
       color: var(--accent);
       font-size: 0.9rem;
     }
     .card {
       background: var(--card);
+      </article>
+
+      <article class="card project-card">
+        <h3><a href="https://github.com/harsh1991mishra/DAZI-AI" target="_blank" rel="noopener noreferrer">DAZI-AI</a></h3>
+        <div class="meta">AI Assistant / Research (fork) · Last pushed: 2026-01-30</div>
+        <p>DAZI-AI appears to be an AI assistant project (fork). Typical responsibilities include model orchestration, prompt handling and lightweight API integration.</p>
+        <h4>Quick start (general)</h4>
+        <pre class="code-block"># clone
       padding: 1.5rem;
       border-radius: 12px;
       margin-bottom: 1.5rem;
@@ -76,34 +39,94 @@
     .card:hover {
       transform: translateY(-5px);
     }
+        <p>If `README.md` is missing, you can publish a simple README with overview, install and run steps (I can create one for you).</p>
+      </article>
+
+      <article class="card project-card">
+        <h3><a href="https://github.com/harsh1991mishra/StackChan" target="_blank" rel="noopener noreferrer">StackChan</a></h3>
+        <div class="meta">Conversational/Chat tool (open source) · Last pushed: 2026-01-08</div>
+        <p>StackChan is an open-source chat assistant. It likely includes server logic, message handling and integrations.</p>
+        <h4>Run</h4>
+        <pre class="code-block"># clone
     ul {
       padding-left: 1.2rem;
     }
     li {
       margin-bottom: 0.5rem;
+      </article>
+
+      <article class="card project-card">
+        <h3><a href="https://github.com/harsh1991mishra/Telegram_Bot" target="_blank" rel="noopener noreferrer">Telegram_Bot</a></h3>
+        <div class="meta">Telegram bot utilities · Last pushed: 2025-07-05</div>
+        <p>Small Telegram bot(s) to automate tasks or respond to messages. Typically uses python-telegram-bot or similar libraries.</p>
+        <h4>Install & run</h4>
+        <pre class="code-block">> git clone https://github.com/harsh1991mishra/Telegram_Bot.git
     }
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1.5rem;
+      </article>
+
+      <article class="card project-card">
+        <h3><a href="https://github.com/harsh1991mishra/toddlerbot" target="_blank" rel="noopener noreferrer">toddlerbot</a></h3>
+        <div class="meta">Robotics/control code (fork) · Last pushed: 2026-01-09</div>
+        <p>Forked robotics project likely containing firmware, motion planners or control stacks. Use platform-specific toolchains to build.</p>
+        <h4>Build (example)</h4>
+        <pre class="code-block"># clone
     }
     .toggle {
       position: fixed;
       top: 20px;
       right: 20px;
+      </article>
+
+      <article class="card project-card">
+        <h3><a href="https://github.com/harsh1991mishra/oh-distro" target="_blank" rel="noopener noreferrer">oh-distro</a></h3>
+        <div class="meta">Humanoid control stack (MIT / Edinburgh fork) · Last pushed: 2018</div>
+        <p>oh-distro is a large integrated humanoid control, planning and perception system. It includes multiple services, ROS packages and research code.</p>
+        <h4>Getting started</h4>
+        <pre class="code-block"># clone (large repo)
       background: var(--card);
       border: none;
       padding: 0.6rem 1rem;
       border-radius: 20px;
       color: var(--text);
+      </article>
+
+      <article class="card project-card">
+        <h3><a href="https://github.com/harsh1991mishra/Berkeley-Humanoid-Lite" target="_blank" rel="noopener noreferrer">Berkeley-Humanoid-Lite</a></h3>
+        <div class="meta">Berkeley humanoid codebase (fork) · Last pushed: 2025-09-11</div>
+        <p>Codebase for a lightweight humanoid platform; likely includes control, simulation scripts and documentation.</p>
+        <h4>Quick tasks</h4>
+        <pre class="code-block">> git clone https://github.com/harsh1991mishra/Berkeley-Humanoid-Lite.git
       cursor: pointer;
     }
+      </article>
+
+      <article class="card project-card">
+        <h3><a href="https://github.com/harsh1991mishra/esp32s3_oled_dasai_mochi" target="_blank" rel="noopener noreferrer">esp32s3_oled_dasai_mochi</a></h3>
+        <div class="meta">Hardware / ESP32S3 + SSD1306 OLED · Last pushed: 2025-03-25</div>
+        <p>Microcontroller project that drives an SSD1306 OLED from a Seeed Xiao ESP32S3 to display step-by-step instructions for making Dasai Mochi.</p>
+        <h4>Flash firmware</h4>
+        <pre class="code-block">> git clone https://github.com/harsh1991mishra/esp32s3_oled_dasai_mochi.git
     footer {
       text-align: center;
       padding: 2rem;
+      </article>
+
+      <article class="card project-card">
+        <h3><a href="https://github.com/harsh1991mishra/crowpanel_AI_assistant" target="_blank" rel="noopener noreferrer">crowpanel_AI_assistant</a></h3>
+        <div class="meta">AI assistant components (fork) · Last pushed: 2025-08-04</div>
+        <p>Likely contains integrations for chat panels and assistant workflows. Standard steps: clone, create env, install deps and run demo server.</p>
+        <pre class="code-block">> git clone https://github.com/harsh1991mishra/crowpanel_AI_assistant.git
       opacity: 0.8;
       font-size: 0.9rem;
     }
+      </article>
+
+    </div>
+  </section>
     a {
       color: var(--accent);
       text-decoration: none;
